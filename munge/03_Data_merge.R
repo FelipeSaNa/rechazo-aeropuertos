@@ -16,3 +16,8 @@ data_all = data_2017 %>%
 
 #remove not needed data
 rm(data_2017, data_2018, data_2019, data_2020, data_2021)
+
+#save clean and merged database in various formats
+save(data_all, file = here("data","clean","eventos_rechazo_agosto2021.RDS"))
+write_xlsx(data_all, here("data","clean","eventos_rechazo_agosto2021.xlsx"))
+write_csv(data_all, here("data","clean","eventos_rechazo_agosto2021.csv"))

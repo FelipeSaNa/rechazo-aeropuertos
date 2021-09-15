@@ -3,8 +3,7 @@
 # Copyright:   2021, FSN GPL v2 or later
 # Data Cleaning and Merging
 # =============================================
-
-#cleaning 2017 database
+#Cleaning 2017 database
 data_2017 = data_2017 %>%
     rename(aguascalientes = aguascalientes_a_i,
            cancun = cancun_q_roo,
@@ -35,7 +34,7 @@ data_2017 = data_2017 %>%
     clean_names() %>%
     pivot_longer(cols= canada:zimbabue, names_to = "pais")
 
-#cleaning 2018 database
+#Cleaning 2018 database
 data_2018 = data_2018 %>%
     rename(acapulco = acapulco_gro,
            aguascalientes = aguascalientes_a_i,
@@ -69,7 +68,7 @@ data_2018 = data_2018 %>%
     clean_names() %>%
     pivot_longer(cols= canada:zimbabue, names_to = "pais")
 
-#cleaning 2019 database
+#Cleaning 2019 database
 data_2019 = data_2019 %>%
     rename(aguascalientes = aguascalientes_a_i_jesus_teran,
            cancun = cancun_q_roo_a_i,
@@ -102,7 +101,7 @@ data_2019 = data_2019 %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
 
 
-#cleaning 2020 database
+#Cleaning 2020 database
 data_2020 = data_2020 %>%
     rename(aguascalientes = aguascalientes_a_i_jesus_teran,
            cancun = cancun_q_roo_a_i,
@@ -132,7 +131,7 @@ data_2020 = data_2020 %>%
     clean_names() %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
 
-#cleaning 2021 database
+#Cleaning 2021 database
 data_2021 = data_2021 %>%
     rename(cancun = cancun_q_roo_a_i,
            cdmx = ciudad_de_mexico_aicm_a_i,
@@ -154,5 +153,6 @@ data_2021 = data_2021 %>%
     pivot_wider(names_from = pais, values_from = value) %>%
     clean_names() %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
+
 #end
 
