@@ -154,14 +154,5 @@ data_2021 = data_2021 %>%
     pivot_wider(names_from = pais, values_from = value) %>%
     clean_names() %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
+#end
 
-
-#
-# # #merging databases
-# data_all = data_2017 %>%
-#     full_join(data_2018) %>%
-#     full_join(data_2019) %>%
-#     full_join(data_2020) %>%
-#     full_join(data_2021) %>%
-#     pivot_wider(names_from = aeropuerto, values_from = value) %>%
-#     replace(is.na(.), 0)
