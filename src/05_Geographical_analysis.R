@@ -59,13 +59,13 @@ mex_map_aeropuerto_2017 %>%
                            right = FALSE)) %>%
     ggplot(aes(fill = casos_cut)) +
     geom_sf(colour = "#dddddd", size = 0.001) +
-    labs(title = "México: Distribución de eventos de rechazo en aeropuertos ocurridas en 2017 a nivel estatal",
-         #subtitle = "Víctimas registradas",
-         caption = "Elaboración propia con información de la UPM del INM") +
+    labs(title = "México: Distribución de rechazos en aeropuertos ocurridos en 2017",
+         subtitle = "Desagregación a nivel estatal por ubicación del aeropuerto",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB") +
     scale_fill_brewer("Total de rechazos", palette = "Reds") +
     theme_void()+
     theme(plot.title = element_text(hjust = 0.5),
-          # plot.subtitle = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
           plot.caption = element_text(hjust = 0.65))
 ggsave("mapa_aeropuertos_2017.png", path = here("plots"))
 
@@ -86,13 +86,13 @@ mex_map_aeropuerto_2018 %>%
                            right = FALSE)) %>%
     ggplot(aes(fill = casos_cut)) +
     geom_sf(colour = "#dddddd", size = 0.001) +
-    labs(title = "México: Distribución de eventos de rechazo en aeropuertos ocurridas en 2018 a nivel estatal",
-         #subtitle = "Víctimas registradas",
-         caption = "Elaboración propia con información de la UPM del INM") +
+    labs(title = "México: Distribución de rechazos en aeropuertos ocurridos en 2018",
+         subtitle = "Desagregación a nivel estatal por ubicación del aeropuerto",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB") +
     scale_fill_brewer("Total de rechazos", palette = "Reds") +
     theme_void()+
     theme(plot.title = element_text(hjust = 0.5),
-          # plot.subtitle = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
           plot.caption = element_text(hjust = 0.65))
 ggsave("mapa_aeropuertos_2018.png", path = here("plots"))
 
@@ -112,13 +112,13 @@ mex_map_aeropuerto_2019 %>%
                            right = FALSE)) %>%
     ggplot(aes(fill = casos_cut)) +
     geom_sf(colour = "#dddddd", size = 0.001) +
-    labs(title = "México: Distribución de eventos de rechazo en aeropuertos ocurridas en 2019 a nivel estatal",
-         #subtitle = "Víctimas registradas",
-         caption = "Elaboración propia con información de la UPM del INM") +
+    labs(title = "México: Distribución de rechazos en aeropuertos ocurridos en 2019",
+         subtitle = "Desagregación a nivel estatal por ubicación del aeropuerto",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB") +
     scale_fill_brewer("Total de rechazos", palette = "Reds") +
     theme_void()+
     theme(plot.title = element_text(hjust = 0.5),
-          # plot.subtitle = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
           plot.caption = element_text(hjust = 0.65))
 ggsave("mapa_aeropuertos_2019.png", path = here("plots"))
 
@@ -138,13 +138,13 @@ mex_map_aeropuerto_2020 %>%
                            right = FALSE)) %>%
     ggplot(aes(fill = casos_cut)) +
     geom_sf(colour = "#dddddd", size = 0.001) +
-    labs(title = "México: Distribución de eventos de rechazo en aeropuertos ocurridas en 2020 a nivel estatal",
-         #subtitle = "Víctimas registradas",
-         caption = "Elaboración propia con información de la UPM del INM") +
+    labs(title = "México: Distribución de rechazos en aeropuertos ocurridos en 2020",
+         subtitle = "Desagregación a nivel estatal por ubicación del aeropuerto",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB") +
     scale_fill_brewer("Total de rechazos", palette = "Reds") +
     theme_void()+
     theme(plot.title = element_text(hjust = 0.5),
-          # plot.subtitle = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
           plot.caption = element_text(hjust = 0.65))
 ggsave("mapa_aeropuertos_2020.png", path = here("plots"))
 
@@ -164,13 +164,13 @@ mex_map_aeropuerto_2021 %>%
                            right = FALSE)) %>%
     ggplot(aes(fill = casos_cut)) +
     geom_sf(colour = "#dddddd", size = 0.001) +
-    labs(title = "México: Distribución de eventos de rechazo en aeropuertos ocurridas en 2021 a nivel estatal",
-         #subtitle = "Víctimas registradas",
-         caption = "Elaboración propia con información de la UPM del INM") +
+    labs(title = "México: Distribución de rechazos en aeropuertos ocurridos en 2021",
+         subtitle = "Desagregación a nivel estatal por ubicación del aeropuerto",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB") +
     scale_fill_brewer("Total de rechazos", palette = "Reds") +
     theme_void()+
     theme(plot.title = element_text(hjust = 0.5),
-          # plot.subtitle = element_text(hjust = 0.5),
+          plot.subtitle = element_text(hjust = 0.5),
           plot.caption = element_text(hjust = 0.65))
 ggsave("mapa_aeropuertos_2021.png", path = here("plots"))
 

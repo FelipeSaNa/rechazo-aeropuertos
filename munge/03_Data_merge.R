@@ -16,21 +16,21 @@ data_all = data_2017 %>%
     mutate(entidad = case_when(aeropuerto == "cdmx" ~ "ciudad_de_mexico",
                                aeropuerto == "cancun" ~ "quintana_roo",
                                aeropuerto == "guadalajara" ~ "jalisco",
-                               aeropuerto == "chichen_itza" ~ "yucatan", #revisar
+                               aeropuerto == "chichen_itza" ~ "yucatan",
                                aeropuerto == "monterrey" ~ "nuevo_leon",
                                aeropuerto == "puerto_vallarta" ~ "jalisco",
                                aeropuerto == "san_jose_del_cabo" ~ "baja_california",
                                aeropuerto == "tijuana" ~ "baja_california",
                                aeropuerto == "merida" ~ "yucatan",
-                               aeropuerto == "silao" ~ "guanajuato", #revisar
+                               aeropuerto == "silao" ~ "guanajuato",
                                aeropuerto == "morelia" ~ "michoacan_de_ocampo",
                                aeropuerto == "mazatlan" ~ "sinaloa",
-                               aeropuerto == "zihuatanejo" ~"guerrero",#revisar
+                               aeropuerto == "zihuatanejo" ~"guerrero",
                                aeropuerto == "san_luis" ~ "san_luis_potosi",
                                aeropuerto == "queretaro" ~ "queretaro",
                                aeropuerto == "toluca" ~"mexico",
                                aeropuerto == "aguascalientes" ~"aguascalientes",
-                               aeropuerto == "cozumel" ~ "quintana_roo", #revisar
+                               aeropuerto == "cozumel" ~ "quintana_roo",
                                aeropuerto == "chihuahua"~ "chihuahua",
                                aeropuerto == "zacatecas" ~ "zacatecas",
                                aeropuerto == "puebla" ~ "puebla",
@@ -43,9 +43,9 @@ data_all = data_2017 %>%
                                aeropuerto == "mexicali" ~ "baja_california",
                                aeropuerto == "tapachula" ~ "chiapas",
                                aeropuerto == "acapulco" ~ "guerrero",
-                               aeropuerto == "loreto" ~ "guerrero", #no tengo puta idea donde sea loreto
-                               aeropuerto == "torreon" ~ "nayarit", #revisar
-                               aeropuerto == "uruapan" ~ "veracruz_de_ignacio_de_la_llave", #revisar
+                               aeropuerto == "loreto" ~ "baja_california_sur", #no tengo puta idea donde sea loreto
+                               aeropuerto == "torreon" ~ "coahuila_de_zaragoza", #revisar
+                               aeropuerto == "uruapan" ~ "michoacan_de_ocampo", #revisar
                                aeropuerto == "villahermosa" ~ "tabasco")) %>%
     left_join(claves_entidades, by = "entidad")
 
