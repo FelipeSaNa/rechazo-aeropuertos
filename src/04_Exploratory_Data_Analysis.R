@@ -6,16 +6,35 @@
 
 #total grouping by years
 data_anual = data_all %>%
-    group_by(ano, aeropuerto) %>%
+    group_by(ano) %>%
+    summarize(total_eventos = sum(eventos_de_rechazo))
+
+# data grouping by aeropuerto
+data_aeropuerto= data_all %>%
+    group_by(aeropuerto) %>%
+    # filter(ano < 2021) %>%
+    # filter(aeropuerto == "cdmx" | aeropuerto == "cancun") %>%
     summarize(total_eventos = sum(eventos_de_rechazo)) %>%
-    filter(aeropuerto == "cdmx" | aeropuerto =="cancun")
+    arrange(desc(total_eventos))
+
 
 #data grouping by country of origin
 data_nacionalidad = data_all %>%
-    # group_by(pais) %>%
-    filter(aeropuerto == "cdmx" | aeropuerto == "cancun")
+    group_by(pais) %>%
+    # filter(ano < 2021) %>%
+    # filter(aeropuerto == "cdmx" | aeropuerto == "cancun") %>%
+    summarize(total_eventos = sum(eventos_de_rechazo)) %>%
+    arrange(desc(total_eventos))
 
 #graph of country of origin by year
-data_nacionalidad %>%
-    filter(ano == 2017)
+data_all %>%
+    group_by(aeropuerto) %>%
+    summarise(sum(eventos_de_rechazo)) %>%
+    print()
 
+#summary statistics of eventos
+data_all %>%
+    summarize(sum(eventos_de_rechazo)) %>%
+    print()
+
+#end

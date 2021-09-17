@@ -3,6 +3,7 @@
 # Copyright:   2021, FSN GPL v2 or later
 # Data Cleaning and Merging
 # =============================================
+
 #Cleaning 2017 database
 data_2017 = data_2017 %>%
     rename(aguascalientes = aguascalientes_a_i,
@@ -153,6 +154,21 @@ data_2021 = data_2021 %>%
     pivot_wider(names_from = pais, values_from = value) %>%
     clean_names() %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
+
+#Cleaning claves entidad
+claves_entidades = claves_entidades %>%
+    clean_names %>%
+    select(c(clave_de_entidad,nombre_de_entidad )) %>%
+    rename(entidad = nombre_de_entidad,
+           cve_entidad = clave_de_entidad) %>%
+    mutate(cve_entidad = str_pad(cve_entidad, width = 2, side = "left", pad = 0),
+           entidad = tolower(entidad),
+           entidad = str_replace_all(entidad, " ", "_"),
+           entidad = str_replace(entidad, "é", "e"),
+           entidad = str_replace(entidad, "á", "a"),
+           entidad = str_replace(entidad, "í", "i"),
+           entidad = str_replace(entidad, "ó", "o"))
+claves_entidades = claves_entidades[!duplicated(claves_entidades$cve_entidad), ]
 
 #end
 

@@ -12,7 +12,42 @@ data_all = data_2017 %>%
     full_join(data_2021) %>%
     rename(eventos_de_rechazo = value) %>%
     # pivot_wider(names_from = aeropuerto, values_from = eventos_de_rechazo) %>%
-    replace(is.na(.), 0)
+    replace(is.na(.), 0) %>%
+    mutate(entidad = case_when(aeropuerto == "cdmx" ~ "ciudad_de_mexico",
+                               aeropuerto == "cancun" ~ "quintana_roo",
+                               aeropuerto == "guadalajara" ~ "jalisco",
+                               aeropuerto == "chichen_itza" ~ "yucatan", #revisar
+                               aeropuerto == "monterrey" ~ "nuevo_leon",
+                               aeropuerto == "puerto_vallarta" ~ "jalisco",
+                               aeropuerto == "san_jose_del_cabo" ~ "baja_california",
+                               aeropuerto == "tijuana" ~ "baja_california",
+                               aeropuerto == "merida" ~ "yucatan",
+                               aeropuerto == "silao" ~ "guanajuato", #revisar
+                               aeropuerto == "morelia" ~ "michoacan_de_ocampo",
+                               aeropuerto == "mazatlan" ~ "sinaloa",
+                               aeropuerto == "zihuatanejo" ~"guerrero",#revisar
+                               aeropuerto == "san_luis" ~ "san_luis_potosi",
+                               aeropuerto == "queretaro" ~ "queretaro",
+                               aeropuerto == "toluca" ~"mexico",
+                               aeropuerto == "aguascalientes" ~"aguascalientes",
+                               aeropuerto == "cozumel" ~ "quintana_roo", #revisar
+                               aeropuerto == "chihuahua"~ "chihuahua",
+                               aeropuerto == "zacatecas" ~ "zacatecas",
+                               aeropuerto == "puebla" ~ "puebla",
+                               aeropuerto == "colima" ~ "colima",
+                               aeropuerto == "ciudad_juarez" ~"chihuahua",
+                               aeropuerto == "oaxaca" ~ "oaxaca",
+                               aeropuerto == "durango" ~ "durango",
+                               aeropuerto == "huatulco" ~ "oaxaca",
+                               aeropuerto == "manzanillo" ~ "colima",
+                               aeropuerto == "mexicali" ~ "baja_california",
+                               aeropuerto == "tapachula" ~ "chiapas",
+                               aeropuerto == "acapulco" ~ "guerrero",
+                               aeropuerto == "loreto" ~ "guerrero", #no tengo puta idea donde sea loreto
+                               aeropuerto == "torreon" ~ "nayarit", #revisar
+                               aeropuerto == "uruapan" ~ "veracruz_de_ignacio_de_la_llave", #revisar
+                               aeropuerto == "villahermosa" ~ "tabasco")) %>%
+    left_join(claves_entidades, by = "entidad")
 
 #remove not needed data
 rm(data_2017, data_2018, data_2019, data_2020, data_2021)
