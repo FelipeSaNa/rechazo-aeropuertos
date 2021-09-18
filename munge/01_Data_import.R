@@ -5,7 +5,7 @@
 # =============================================
 
 #loading packages
-pacman::p_load(tidyverse, here, janitor, readxl, writexl, sf)
+pacman::p_load(tidyverse, here, janitor, readxl, writexl, sf, hrbrthemes, kableExtra)
 
 #importing databases with clean names
 data_2017 = read_xls(here("data", "raw", "rechazos_2017.xls")) %>% clean_names()

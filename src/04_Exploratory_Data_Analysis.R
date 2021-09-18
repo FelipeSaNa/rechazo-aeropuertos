@@ -37,4 +37,51 @@ data_all %>%
     summarize(sum(eventos_de_rechazo)) %>%
     print()
 
+#plotting nacionalidades
+data_nacionalidad %>%
+    filter(!is.na(total_eventos)) %>%
+    arrange(total_eventos) %>%
+    tail(20) %>%
+    mutate(pais=factor(pais, pais)) %>%
+    ggplot( aes(x=pais, y=total_eventos) ) +
+    geom_bar(stat="identity", fill="#69b3a2") +
+    coord_flip() +
+    theme_ipsum() +
+    theme(
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        legend.position="none",
+        plot.title = element_text(size=12),
+        plot.subtitle = element_text(size=10)) +
+    labs(title = "México: Rechazos ocurridos en aeropuertos entre 2017 y 2021",
+         subtitle = "Desagregación por nacionalidades más frecuentes",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
+             xlab("") +
+             ylab("Total de eventos")
+ggsave("grafica_nacionalidades.png", path = here("plots"))
+
+
+#gráfica por años
+data_anual %>%
+    filter(!is.na(total_eventos)) %>%
+    arrange(total_eventos) %>%
+    tail(20) %>%
+    mutate(ano=factor(ano, ano)) %>%
+    ggplot( aes(x=ano, y=total_eventos) ) +
+    geom_bar(stat="identity", fill="#69b3a2") +
+    coord_flip() +
+    theme_ipsum() +
+    theme(
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        legend.position="none",
+        plot.title = element_text(size=12),
+        plot.subtitle = element_text(size=10)) +
+    labs(title = "México: Rechazos ocurridos en aeropuertos entre 2017 y 2021",
+         subtitle = "Desagregación por año",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
+    xlab("") +
+    ylab("Total de eventos")
+ggsave("grafica_anual.png", path = here("plots"))
+
 #end
