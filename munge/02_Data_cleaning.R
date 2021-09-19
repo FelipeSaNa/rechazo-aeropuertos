@@ -170,5 +170,5 @@ claves_entidades = claves_entidades %>%
            entidad = str_replace(entidad, "ó", "o"))
 claves_entidades = claves_entidades[!duplicated(claves_entidades$cve_entidad), ]
 
-#end
+#END
 

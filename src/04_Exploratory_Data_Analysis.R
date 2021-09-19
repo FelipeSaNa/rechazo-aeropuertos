@@ -84,4 +84,4 @@ data_anual %>%
     ylab("Total de eventos")
 ggsave("grafica_anual.png", path = here("plots"))
 
-#end
+#END

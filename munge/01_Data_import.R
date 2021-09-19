@@ -16,4 +16,5 @@ data_2021 = read_xls(here("data", "raw", "rechazos_2021.xls")) %>% clean_names()
 
 #importing claves entidad
 claves_entidades = as_tibble(read_csv(here("data", "raw", "municipios.csv"))) %>% clean_names()
-#end
+
+#END
