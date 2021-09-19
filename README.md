@@ -11,6 +11,6 @@ Ambas prácticas implementadas paralelamente por las autoridades principalmente 
 
 Este proyecto analiza la información oficial de las uatoridades migratorias mexicanas sobre los rechazos en aeropuertos desde 2017, primer año en que se ha generado información sobre rechazos en aeropuertos. 
 
-El proyecto se actualizará mensaulmente con el bojetivo de tener inforamción confiable y actualizada sobre la evolución del fenómeno. 
+El proyecto se actualizará mensaulmente con el objetivo de tener inforamción confiable y actualizada sobre la evolución del fenómeno. 
 
 
