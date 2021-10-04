@@ -4,13 +4,22 @@
 # Database merge
 # =============================================
 
-# Merging databases
+#merging ingresos databases
+ingresos_all = ingresos_2017 %>%
+    full_join(ingresos_2018) %>%
+    full_join(ingresos_2019) %>%
+    full_join(ingresos_2020) %>%
+    full_join(ingresos_2021)
+
+# Merging  all databases
 data_all = data_2017 %>%
     full_join(data_2018) %>%
     full_join(data_2019) %>%
     full_join(data_2020) %>%
     full_join(data_2021) %>%
     rename(eventos_de_rechazo = value) %>%
+    left_join(ingresos_all, by = c("ano", "aeropuerto", "pais")) %>%
+    # left_join(ingresos_2018, by = c("ano", "aeropuerto", "pais")) %>%
     # pivot_wider(names_from = aeropuerto, values_from = eventos_de_rechazo) %>%
     replace(is.na(.), 0) %>%
     mutate(entidad = case_when(aeropuerto == "cdmx" ~ "ciudad_de_mexico",
@@ -49,13 +58,15 @@ data_all = data_2017 %>%
                                aeropuerto == "villahermosa" ~ "tabasco")) %>%
     left_join(claves_entidades, by = "entidad")
 
-#remove not needed data
-rm(data_2017, data_2018, data_2019, data_2020, data_2021)
-
 #save clean and merged database in various formats
 save(data_all, file = here("data","clean","eventos_rechazo_agosto2021.RDS"))
 write_xlsx(data_all, here("data","clean","eventos_rechazo_agosto2021.xlsx"))
 write_csv(data_all, here("data","clean","eventos_rechazo_agosto2021.csv"))
-write_xlsx(data_all, here("data","clean","claves_entidades_clean.xlsx"))
+save(claves_entidades, file = here("data","clean","claves_entidades_clean.RData"))
+
+#remove not needed data
+rm(data_2017, data_2018, data_2019, data_2020, data_2021)
+rm(ingresos_2017, ingresos_2018, ingresos_2019, ingresos_2020, ingresos_2021, ingresos_all)
+
 
 #END

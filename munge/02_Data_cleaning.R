@@ -4,7 +4,7 @@
 # Data Cleaning and Merging
 # =============================================
 
-#Cleaning 2017 database
+#Cleaning 2017  rechazos database
 data_2017 = data_2017 %>%
     rename(aguascalientes = aguascalientes_a_i,
            cancun = cancun_q_roo,
@@ -35,7 +35,7 @@ data_2017 = data_2017 %>%
     clean_names() %>%
     pivot_longer(cols= canada:zimbabue, names_to = "pais")
 
-#Cleaning 2018 database
+#Cleaning 2018 rechazos database
 data_2018 = data_2018 %>%
     rename(acapulco = acapulco_gro,
            aguascalientes = aguascalientes_a_i,
@@ -69,7 +69,7 @@ data_2018 = data_2018 %>%
     clean_names() %>%
     pivot_longer(cols= canada:zimbabue, names_to = "pais")
 
-#Cleaning 2019 database
+#Cleaning 2019 rechazos database
 data_2019 = data_2019 %>%
     rename(aguascalientes = aguascalientes_a_i_jesus_teran,
            cancun = cancun_q_roo_a_i,
@@ -102,7 +102,7 @@ data_2019 = data_2019 %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
 
 
-#Cleaning 2020 database
+#Cleaning 2020 rechazos database
 data_2020 = data_2020 %>%
     rename(aguascalientes = aguascalientes_a_i_jesus_teran,
            cancun = cancun_q_roo_a_i,
@@ -132,7 +132,7 @@ data_2020 = data_2020 %>%
     clean_names() %>%
     pivot_longer(cols= canada:apatriadas, names_to = "pais")
 
-#Cleaning 2021 database
+#Cleaning 2021 rechazos database
 data_2021 = data_2021 %>%
     rename(cancun = cancun_q_roo_a_i,
            cdmx = ciudad_de_mexico_aicm_a_i,
@@ -169,6 +169,189 @@ claves_entidades = claves_entidades %>%
            entidad = str_replace(entidad, "í", "i"),
            entidad = str_replace(entidad, "ó", "o"))
 claves_entidades = claves_entidades[!duplicated(claves_entidades$cve_entidad), ]
+
+
+
+#cleaning ingresos 2017 dataase
+ingresos_2017 = ingresos_2017 %>%
+    rename(aguascalientes = aguascalientes_a_i_jesus_teran,
+           apodaca = apodaca_a_i_del_norte,
+           cancun = cancun_a_i,
+           chihuahua = chihuahua_a_i,
+           cdmx = cd_de_mexico_a_i_benito_juarez,
+           colima = colima_a_i,
+           cozumel = cozumel_a_i,
+           durango = durango_a_i,
+           guadalajara = guadalajara_a_i,
+           hermosillo = hermosillo_a_i,
+           huatulco = huatulco_a_i,
+           loreto = loreto_a_i,
+           mazatlan = mazatlan_a_i,
+           merida = merida_a_i,
+           monterrey = monterrey_a_i_gral_mariano_escobedo,
+           morelia = morelia_a_i,
+           oaxaca = oaxaca_a_i,
+           puebla = puebla_a_i_hermanos_serdan,
+           puerto_vallarta = puerto_vallarta_a_i,
+           queretaro = queretaro_a_i_ing_fernando_espinosa,
+           san_jose_del_cabo = san_jose_del_cabo_a_i,
+           san_luis = san_luis_potosi_a_i_ponciano_arriaga,
+           silao = silao_a_i_el_bajio,
+           toluca = toluca_a_i,
+           torreon = torreon_a_i,
+           veracruz = veracruz_a_i,
+           zacatecas = zacatecas_a_i_gral_leobardo_c_ruiz,
+           zihuatanejo = zihuatanejo_a_i)%>%
+    pivot_longer(cols = cdmx:otros, names_to = "aeropuerto")%>%
+    pivot_wider(names_from = pais, values_from = value)%>%
+    clean_names() %>%
+    pivot_longer(cols= mexico:no_especificado, names_to = "pais")%>%
+    rename(ingresos = value)
+
+#cleaning 2018 database
+ingresos_2018 = ingresos_2018 %>%
+    rename(aguascalientes = aguascalientes_a_i_jesus_teran,
+           apodaca = apodaca_a_i_del_norte,
+           cancun = cancun_a_i,
+           chihuahua = chihuahua_a_i,
+           cdmx = cd_de_mexico_a_i_benito_juarez,
+           colima = colima_a_i,
+           cozumel = cozumel_a_i,
+           durango = durango_a_i,
+           guadalajara = guadalajara_a_i,
+           hermosillo = hermosillo_a_i,
+           huatulco = huatulco_a_i,
+           loreto = loreto_a_i,
+           mazatlan = mazatlan_a_i,
+           merida = merida_a_i,
+           monterrey = monterrey_a_i_gral_mariano_escobedo,
+           morelia = morelia_a_i,
+           oaxaca = oaxaca_a_i,
+           puebla = puebla_a_i_hermanos_serdan,
+           puerto_vallarta = puerto_vallarta_a_i,
+           queretaro = queretaro_a_i_ing_fernando_espinosa,
+           san_jose_del_cabo = san_jose_del_cabo_a_i,
+           san_luis = san_luis_potosi_a_i_ponciano_arriaga,
+           silao = silao_a_i_el_bajio,
+           tijuana = tijuana_a_i_gral_abelardo_l_rodriguez,
+           toluca = toluca_a_i,
+           torreon = torreon_a_i,
+           zacatecas = zacatecas_a_i_gral_leobardo_c_ruiz,
+           zihuatanejo = zihuatanejo_a_i) %>%
+    pivot_longer(cols = cdmx:otros, names_to = "aeropuerto")%>%
+    pivot_wider(names_from = pais, values_from = value)%>%
+    clean_names() %>%
+    pivot_longer(cols= mexico:no_especificado, names_to = "pais")%>%
+    rename(ingresos = value)
+
+#cleaning 2019 database
+ingresos_2019 = ingresos_2019 %>%
+    rename(aguascalientes = aguascalientes_a_i_jesus_teran,
+           apodaca = apodaca_a_i_del_norte,
+           cancun = cancun_a_i,
+           chihuahua = chihuahua_a_i,
+           cdmx = cd_de_mexico_a_i_benito_juarez,
+           colima = colima_a_i,
+           cozumel = cozumel_a_i,
+           durango = durango_a_i,
+           guadalajara = guadalajara_a_i,
+           hermosillo = hermosillo_a_i,
+           huatulco = huatulco_a_i,
+           loreto = loreto_a_i,
+           mazatlan = mazatlan_a_i,
+           merida = merida_a_i,
+           monterrey = monterrey_a_i_gral_mariano_escobedo,
+           morelia = morelia_a_i,
+           oaxaca = oaxaca_a_i,
+           puerto_vallarta = puerto_vallarta_a_i,
+           queretaro = queretaro_a_i_ing_fernando_espinosa,
+           san_jose_del_cabo = san_jose_del_cabo_a_i,
+           san_luis = san_luis_potosi_a_i_ponciano_arriaga,
+           silao = silao_a_i_el_bajio,
+           tijuana = tijuana_a_i_gral_abelardo_l_rodriguez,
+           toluca = toluca_a_i,
+           torreon = torreon_a_i,
+           veracruz = veracruz_a_i,
+           zacatecas = zacatecas_a_i_gral_leobardo_c_ruiz,
+           zihuatanejo = zihuatanejo_a_i) %>%
+    pivot_longer(cols = cdmx:otros, names_to = "aeropuerto")%>%
+    pivot_wider(names_from = pais, values_from = value)%>%
+    clean_names() %>%
+    pivot_longer(cols= mexico:no_especificado, names_to = "pais")%>%
+    rename(ingresos = value)
+
+#cleaning 2020 database
+ingresos_2020 = ingresos_2020 %>%
+    rename(aguascalientes = aguascalientes_a_i_jesus_teran,
+           acapulco = acapulco_a_i_plan_de_los_amates,
+           apodaca = apodaca_a_i_del_norte,
+           cancun = cancun_a_i,
+           chihuahua = chihuahua_a_i,
+           cdmx = cd_de_mexico_a_i_benito_juarez,
+           colima = colima_a_i,
+           cozumel = cozumel_a_i,
+           durango = durango_a_i,
+           guadalajara = guadalajara_a_i,
+           hermosillo = hermosillo_a_i,
+           huatulco = huatulco_a_i,
+           loreto = loreto_a_i,
+           los_cabos = los_cabos_aerodromo,
+           mazatlan = mazatlan_a_i,
+           merida = merida_a_i,
+           monterrey = monterrey_a_i_gral_mariano_escobedo,
+           morelia = morelia_a_i,
+           oaxaca = oaxaca_a_i,
+           puerto_vallarta = puerto_vallarta_a_i,
+           queretaro = queretaro_a_i_ing_fernando_espinosa,
+           san_jose_del_cabo = san_jose_del_cabo_a_i,
+           san_luis = san_luis_potosi_a_i_ponciano_arriaga,
+           silao = silao_a_i_el_bajio,
+           toluca = toluca_a_i,
+           torreon = torreon_a_i,
+           zacatecas = zacatecas_a_i_gral_leobardo_c_ruiz,
+           zihuatanejo = zihuatanejo_a_i) %>%
+    pivot_longer(cols = cancun:otros, names_to = "aeropuerto")%>%
+    pivot_wider(names_from = pais, values_from = value)%>%
+    clean_names() %>%
+    pivot_longer(cols= mexico:no_especificado, names_to = "pais") %>%
+    rename(ingresos = value)
+
+#cleaning 2021 database
+ingresos_2021 = ingresos_2021 %>%
+    rename(aguascalientes = aguascalientes_a_i_jesus_teran,
+           apodaca = apodaca_a_i_del_norte,
+           cancun = cancun_a_i,
+           chihuahua = chihuahua_a_i,
+           cdmx = cd_de_mexico_a_i_benito_juarez,
+           colima = colima_a_i,
+           cozumel = cozumel_a_i,
+           durango = durango_a_i,
+           guadalajara = guadalajara_a_i,
+           hermosillo = hermosillo_a_i,
+           loreto = loreto_a_i,
+           los_cabos = los_cabos_aerodromo,
+           mazatlan = mazatlan_a_i,
+           merida = merida_a_i,
+           monterrey = monterrey_a_i_gral_mariano_escobedo,
+           morelia = morelia_a_i,
+           oaxaca = oaxaca_a_i,
+           puerto_vallarta = puerto_vallarta_a_i,
+           queretaro = queretaro_a_i_ing_fernando_espinosa,
+           san_jose_del_cabo = san_jose_del_cabo_a_i,
+           san_luis = san_luis_potosi_a_i_ponciano_arriaga,
+           silao = silao_a_i_el_bajio,
+           tampico = tampico_a_i,
+           toluca = toluca_a_i,
+           torreon = torreon_a_i,
+           veracruz = veracruz_a_i,
+           zacatecas = zacatecas_a_i_gral_leobardo_c_ruiz,
+           zihuatanejo = zihuatanejo_a_i) %>%
+    pivot_longer(cols = cancun:otros, names_to = "aeropuerto")%>%
+    pivot_wider(names_from = pais, values_from = value)%>%
+    clean_names() %>%
+    pivot_longer(cols= mexico:no_especificado, names_to = "pais")%>%
+    rename(ingresos = value)
+
 
 #END
 
