@@ -6799,7 +6799,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,aguascalientes,uganda,0,0,aguascalientes,01
 2019,aguascalientes,zambia,0,1,aguascalientes,01
 2019,aguascalientes,zimbabue,0,1,aguascalientes,01
-2019,aguascalientes,apatriadas,0,0,aguascalientes,01
+2019,aguascalientes,apatridas,0,0,aguascalientes,01
 2019,cancun,canada,43,1186480,quintana_roo,23
 2019,cancun,estados_unidos,419,3875361,quintana_roo,23
 2019,cancun,belice,2,2797,quintana_roo,23
@@ -6946,7 +6946,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,cancun,uganda,3,101,quintana_roo,23
 2019,cancun,zambia,1,102,quintana_roo,23
 2019,cancun,zimbabue,2,261,quintana_roo,23
-2019,cancun,apatriadas,1,0,quintana_roo,23
+2019,cancun,apatridas,1,17,quintana_roo,23
 2019,cdmx,canada,39,265773,ciudad_de_mexico,09
 2019,cdmx,estados_unidos,152,1802605,ciudad_de_mexico,09
 2019,cdmx,belice,2,1120,ciudad_de_mexico,09
@@ -7093,7 +7093,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,cdmx,uganda,21,171,ciudad_de_mexico,09
 2019,cdmx,zambia,0,148,ciudad_de_mexico,09
 2019,cdmx,zimbabue,2,355,ciudad_de_mexico,09
-2019,cdmx,apatriadas,0,0,ciudad_de_mexico,09
+2019,cdmx,apatridas,0,8,ciudad_de_mexico,09
 2019,chihuahua,canada,0,2907,chihuahua,08
 2019,chihuahua,estados_unidos,4,25500,chihuahua,08
 2019,chihuahua,belice,0,0,chihuahua,08
@@ -7240,7 +7240,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,chihuahua,uganda,0,0,chihuahua,08
 2019,chihuahua,zambia,0,1,chihuahua,08
 2019,chihuahua,zimbabue,0,0,chihuahua,08
-2019,chihuahua,apatriadas,0,0,chihuahua,08
+2019,chihuahua,apatridas,0,0,chihuahua,08
 2019,chichen_itza,canada,0,0,yucatan,31
 2019,chichen_itza,estados_unidos,0,0,yucatan,31
 2019,chichen_itza,belice,0,0,yucatan,31
@@ -7387,7 +7387,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,chichen_itza,uganda,0,0,yucatan,31
 2019,chichen_itza,zambia,0,0,yucatan,31
 2019,chichen_itza,zimbabue,0,0,yucatan,31
-2019,chichen_itza,apatriadas,0,0,yucatan,31
+2019,chichen_itza,apatridas,0,0,yucatan,31
 2019,colima,canada,0,9806,colima,06
 2019,colima,estados_unidos,1,18985,colima,06
 2019,colima,belice,0,0,colima,06
@@ -7534,7 +7534,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,colima,uganda,0,0,colima,06
 2019,colima,zambia,0,0,colima,06
 2019,colima,zimbabue,0,0,colima,06
-2019,colima,apatriadas,0,0,colima,06
+2019,colima,apatridas,0,0,colima,06
 2019,durango,canada,0,106,durango,10
 2019,durango,estados_unidos,1,21452,durango,10
 2019,durango,belice,0,0,durango,10
@@ -7681,7 +7681,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,durango,uganda,0,0,durango,10
 2019,durango,zambia,0,0,durango,10
 2019,durango,zimbabue,0,0,durango,10
-2019,durango,apatriadas,0,0,durango,10
+2019,durango,apatridas,0,0,durango,10
 2019,guadalajara,canada,0,10753,jalisco,14
 2019,guadalajara,estados_unidos,54,1051787,jalisco,14
 2019,guadalajara,belice,0,39,jalisco,14
@@ -7828,7 +7828,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,guadalajara,uganda,0,9,jalisco,14
 2019,guadalajara,zambia,0,7,jalisco,14
 2019,guadalajara,zimbabue,0,3,jalisco,14
-2019,guadalajara,apatriadas,0,0,jalisco,14
+2019,guadalajara,apatridas,0,0,jalisco,14
 2019,loreto,canada,0,4038,baja_california_sur,03
 2019,loreto,estados_unidos,1,29543,baja_california_sur,03
 2019,loreto,belice,0,2,baja_california_sur,03
@@ -7975,7 +7975,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,loreto,uganda,0,1,baja_california_sur,03
 2019,loreto,zambia,0,0,baja_california_sur,03
 2019,loreto,zimbabue,0,0,baja_california_sur,03
-2019,loreto,apatriadas,0,0,baja_california_sur,03
+2019,loreto,apatridas,0,0,baja_california_sur,03
 2019,mazatlan,canada,3,53751,sinaloa,25
 2019,mazatlan,estados_unidos,5,77926,sinaloa,25
 2019,mazatlan,belice,0,1,sinaloa,25
@@ -8122,7 +8122,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,mazatlan,uganda,0,0,sinaloa,25
 2019,mazatlan,zambia,0,0,sinaloa,25
 2019,mazatlan,zimbabue,0,1,sinaloa,25
-2019,mazatlan,apatriadas,0,0,sinaloa,25
+2019,mazatlan,apatridas,0,0,sinaloa,25
 2019,merida,canada,0,5926,yucatan,31
 2019,merida,estados_unidos,2,33866,yucatan,31
 2019,merida,belice,0,14,yucatan,31
@@ -8269,7 +8269,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,merida,uganda,0,1,yucatan,31
 2019,merida,zambia,0,1,yucatan,31
 2019,merida,zimbabue,0,1,yucatan,31
-2019,merida,apatriadas,0,0,yucatan,31
+2019,merida,apatridas,0,0,yucatan,31
 2019,monterrey,canada,0,9974,nuevo_leon,19
 2019,monterrey,estados_unidos,15,205551,nuevo_leon,19
 2019,monterrey,belice,0,29,nuevo_leon,19
@@ -8416,7 +8416,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,monterrey,uganda,0,2,nuevo_leon,19
 2019,monterrey,zambia,0,1,nuevo_leon,19
 2019,monterrey,zimbabue,0,13,nuevo_leon,19
-2019,monterrey,apatriadas,0,0,nuevo_leon,19
+2019,monterrey,apatridas,0,0,nuevo_leon,19
 2019,morelia,canada,0,339,michoacan_de_ocampo,16
 2019,morelia,estados_unidos,3,103212,michoacan_de_ocampo,16
 2019,morelia,belice,0,1,michoacan_de_ocampo,16
@@ -8563,7 +8563,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,morelia,uganda,0,0,michoacan_de_ocampo,16
 2019,morelia,zambia,0,0,michoacan_de_ocampo,16
 2019,morelia,zimbabue,0,0,michoacan_de_ocampo,16
-2019,morelia,apatriadas,0,0,michoacan_de_ocampo,16
+2019,morelia,apatridas,0,0,michoacan_de_ocampo,16
 2019,oaxaca,canada,0,875,oaxaca,20
 2019,oaxaca,estados_unidos,2,34314,oaxaca,20
 2019,oaxaca,belice,0,0,oaxaca,20
@@ -8710,7 +8710,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,oaxaca,uganda,0,0,oaxaca,20
 2019,oaxaca,zambia,0,0,oaxaca,20
 2019,oaxaca,zimbabue,0,1,oaxaca,20
-2019,oaxaca,apatriadas,0,0,oaxaca,20
+2019,oaxaca,apatridas,0,0,oaxaca,20
 2019,puebla,canada,0,0,puebla,21
 2019,puebla,estados_unidos,1,0,puebla,21
 2019,puebla,belice,0,0,puebla,21
@@ -8857,7 +8857,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,puebla,uganda,0,0,puebla,21
 2019,puebla,zambia,0,0,puebla,21
 2019,puebla,zimbabue,0,0,puebla,21
-2019,puebla,apatriadas,0,0,puebla,21
+2019,puebla,apatridas,0,0,puebla,21
 2019,puerto_vallarta,canada,11,422496,jalisco,14
 2019,puerto_vallarta,estados_unidos,61,1005149,jalisco,14
 2019,puerto_vallarta,belice,0,29,jalisco,14
@@ -9004,7 +9004,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,puerto_vallarta,uganda,0,4,jalisco,14
 2019,puerto_vallarta,zambia,0,9,jalisco,14
 2019,puerto_vallarta,zimbabue,0,34,jalisco,14
-2019,puerto_vallarta,apatriadas,0,0,jalisco,14
+2019,puerto_vallarta,apatridas,0,0,jalisco,14
 2019,queretaro,canada,0,5792,queretaro,22
 2019,queretaro,estados_unidos,5,94913,queretaro,22
 2019,queretaro,belice,0,12,queretaro,22
@@ -9151,7 +9151,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,queretaro,uganda,0,0,queretaro,22
 2019,queretaro,zambia,0,1,queretaro,22
 2019,queretaro,zimbabue,0,3,queretaro,22
-2019,queretaro,apatriadas,0,0,queretaro,22
+2019,queretaro,apatridas,0,0,queretaro,22
 2019,san_jose_del_cabo,canada,3,192052,baja_california,02
 2019,san_jose_del_cabo,estados_unidos,76,1528784,baja_california,02
 2019,san_jose_del_cabo,belice,0,41,baja_california,02
@@ -9298,7 +9298,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,san_jose_del_cabo,uganda,0,11,baja_california,02
 2019,san_jose_del_cabo,zambia,0,19,baja_california,02
 2019,san_jose_del_cabo,zimbabue,0,32,baja_california,02
-2019,san_jose_del_cabo,apatriadas,0,0,baja_california,02
+2019,san_jose_del_cabo,apatridas,0,3,baja_california,02
 2019,san_luis,canada,0,964,san_luis_potosi,24
 2019,san_luis,estados_unidos,1,40726,san_luis_potosi,24
 2019,san_luis,belice,0,13,san_luis_potosi,24
@@ -9445,7 +9445,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,san_luis,uganda,0,0,san_luis_potosi,24
 2019,san_luis,zambia,0,0,san_luis_potosi,24
 2019,san_luis,zimbabue,0,1,san_luis_potosi,24
-2019,san_luis,apatriadas,0,0,san_luis_potosi,24
+2019,san_luis,apatridas,0,0,san_luis_potosi,24
 2019,silao,canada,0,3464,guanajuato,11
 2019,silao,estados_unidos,4,174153,guanajuato,11
 2019,silao,belice,0,12,guanajuato,11
@@ -9592,7 +9592,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,silao,uganda,0,1,guanajuato,11
 2019,silao,zambia,0,0,guanajuato,11
 2019,silao,zimbabue,0,4,guanajuato,11
-2019,silao,apatriadas,0,0,guanajuato,11
+2019,silao,apatridas,0,0,guanajuato,11
 2019,tijuana,canada,0,49,baja_california,02
 2019,tijuana,estados_unidos,2,2399,baja_california,02
 2019,tijuana,belice,0,59,baja_california,02
@@ -9739,7 +9739,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,tijuana,uganda,0,0,baja_california,02
 2019,tijuana,zambia,0,1,baja_california,02
 2019,tijuana,zimbabue,0,0,baja_california,02
-2019,tijuana,apatriadas,0,0,baja_california,02
+2019,tijuana,apatridas,0,0,baja_california,02
 2019,toluca,canada,0,208,mexico,15
 2019,toluca,estados_unidos,1,6244,mexico,15
 2019,toluca,belice,0,15,mexico,15
@@ -9886,7 +9886,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,toluca,uganda,0,0,mexico,15
 2019,toluca,zambia,0,0,mexico,15
 2019,toluca,zimbabue,0,0,mexico,15
-2019,toluca,apatriadas,0,0,mexico,15
+2019,toluca,apatridas,0,0,mexico,15
 2019,uruapan,canada,0,0,michoacan_de_ocampo,16
 2019,uruapan,estados_unidos,1,0,michoacan_de_ocampo,16
 2019,uruapan,belice,0,0,michoacan_de_ocampo,16
@@ -10033,7 +10033,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,uruapan,uganda,0,0,michoacan_de_ocampo,16
 2019,uruapan,zambia,0,0,michoacan_de_ocampo,16
 2019,uruapan,zimbabue,0,0,michoacan_de_ocampo,16
-2019,uruapan,apatriadas,0,0,michoacan_de_ocampo,16
+2019,uruapan,apatridas,0,0,michoacan_de_ocampo,16
 2019,zacatecas,canada,0,77,zacatecas,32
 2019,zacatecas,estados_unidos,1,40661,zacatecas,32
 2019,zacatecas,belice,0,0,zacatecas,32
@@ -10180,7 +10180,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,zacatecas,uganda,0,0,zacatecas,32
 2019,zacatecas,zambia,0,0,zacatecas,32
 2019,zacatecas,zimbabue,0,0,zacatecas,32
-2019,zacatecas,apatriadas,0,0,zacatecas,32
+2019,zacatecas,apatridas,0,0,zacatecas,32
 2019,zihuatanejo,canada,1,42485,guerrero,12
 2019,zihuatanejo,estados_unidos,4,52341,guerrero,12
 2019,zihuatanejo,belice,0,0,guerrero,12
@@ -10327,7 +10327,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2019,zihuatanejo,uganda,0,0,guerrero,12
 2019,zihuatanejo,zambia,0,0,guerrero,12
 2019,zihuatanejo,zimbabue,0,3,guerrero,12
-2019,zihuatanejo,apatriadas,0,0,guerrero,12
+2019,zihuatanejo,apatridas,0,0,guerrero,12
 2020,aguascalientes,canada,0,150,aguascalientes,01
 2020,aguascalientes,estados_unidos,3,30089,aguascalientes,01
 2020,aguascalientes,belice,0,1,aguascalientes,01
@@ -13494,7 +13494,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cancun,reino_unido,9,23177,quintana_roo,23
 2021,cancun,rumania,896,7927,quintana_roo,23
 2021,cancun,rusia,117,26976,quintana_roo,23
-2021,cancun,serbia_2,7,0,quintana_roo,23
+2021,cancun,serbia,7,1312,quintana_roo,23
 2021,cancun,suecia,5,2081,quintana_roo,23
 2021,cancun,suiza,1,14364,quintana_roo,23
 2021,cancun,ucrania,32,10878,quintana_roo,23
@@ -13569,7 +13569,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cancun,togo,2,19,quintana_roo,23
 2021,cancun,tunez,3,208,quintana_roo,23
 2021,cancun,zimbabue,3,106,quintana_roo,23
-2021,cancun,apatriadas,0,0,quintana_roo,23
+2021,cancun,apatridas,0,5,quintana_roo,23
 2021,cdmx,canada,10,26078,ciudad_de_mexico,09
 2021,cdmx,estados_unidos,79,623283,ciudad_de_mexico,09
 2021,cdmx,belice,1,219,ciudad_de_mexico,09
@@ -13631,7 +13631,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cdmx,reino_unido,17,18014,ciudad_de_mexico,09
 2021,cdmx,rumania,220,1953,ciudad_de_mexico,09
 2021,cdmx,rusia,90,6098,ciudad_de_mexico,09
-2021,cdmx,serbia_2,4,0,ciudad_de_mexico,09
+2021,cdmx,serbia,4,401,ciudad_de_mexico,09
 2021,cdmx,suecia,3,2362,ciudad_de_mexico,09
 2021,cdmx,suiza,6,7193,ciudad_de_mexico,09
 2021,cdmx,ucrania,68,4507,ciudad_de_mexico,09
@@ -13706,7 +13706,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cdmx,togo,0,10,ciudad_de_mexico,09
 2021,cdmx,tunez,1,163,ciudad_de_mexico,09
 2021,cdmx,zimbabue,0,42,ciudad_de_mexico,09
-2021,cdmx,apatriadas,0,0,ciudad_de_mexico,09
+2021,cdmx,apatridas,0,3,ciudad_de_mexico,09
 2021,chichen_itza,canada,0,0,yucatan,31
 2021,chichen_itza,estados_unidos,0,0,yucatan,31
 2021,chichen_itza,belice,0,0,yucatan,31
@@ -13768,7 +13768,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,chichen_itza,reino_unido,0,0,yucatan,31
 2021,chichen_itza,rumania,0,0,yucatan,31
 2021,chichen_itza,rusia,0,0,yucatan,31
-2021,chichen_itza,serbia_2,0,0,yucatan,31
+2021,chichen_itza,serbia,0,0,yucatan,31
 2021,chichen_itza,suecia,0,0,yucatan,31
 2021,chichen_itza,suiza,0,0,yucatan,31
 2021,chichen_itza,ucrania,0,0,yucatan,31
@@ -13843,7 +13843,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,chichen_itza,togo,0,0,yucatan,31
 2021,chichen_itza,tunez,0,0,yucatan,31
 2021,chichen_itza,zimbabue,0,0,yucatan,31
-2021,chichen_itza,apatriadas,0,0,yucatan,31
+2021,chichen_itza,apatridas,0,0,yucatan,31
 2021,colima,canada,0,95,colima,06
 2021,colima,estados_unidos,2,8750,colima,06
 2021,colima,belice,0,0,colima,06
@@ -13905,7 +13905,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,colima,reino_unido,0,24,colima,06
 2021,colima,rumania,0,4,colima,06
 2021,colima,rusia,0,2,colima,06
-2021,colima,serbia_2,0,0,colima,06
+2021,colima,serbia,0,0,colima,06
 2021,colima,suecia,0,1,colima,06
 2021,colima,suiza,0,0,colima,06
 2021,colima,ucrania,0,0,colima,06
@@ -13980,7 +13980,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,colima,togo,0,0,colima,06
 2021,colima,tunez,0,0,colima,06
 2021,colima,zimbabue,0,0,colima,06
-2021,colima,apatriadas,0,0,colima,06
+2021,colima,apatridas,0,0,colima,06
 2021,cozumel,canada,0,550,quintana_roo,23
 2021,cozumel,estados_unidos,3,117052,quintana_roo,23
 2021,cozumel,belice,0,17,quintana_roo,23
@@ -14042,7 +14042,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cozumel,reino_unido,0,250,quintana_roo,23
 2021,cozumel,rumania,0,10,quintana_roo,23
 2021,cozumel,rusia,0,96,quintana_roo,23
-2021,cozumel,serbia_2,0,0,quintana_roo,23
+2021,cozumel,serbia,0,11,quintana_roo,23
 2021,cozumel,suecia,0,13,quintana_roo,23
 2021,cozumel,suiza,0,24,quintana_roo,23
 2021,cozumel,ucrania,0,58,quintana_roo,23
@@ -14117,7 +14117,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,cozumel,togo,0,0,quintana_roo,23
 2021,cozumel,tunez,0,2,quintana_roo,23
 2021,cozumel,zimbabue,0,0,quintana_roo,23
-2021,cozumel,apatriadas,0,0,quintana_roo,23
+2021,cozumel,apatridas,0,0,quintana_roo,23
 2021,guadalajara,canada,0,1989,jalisco,14
 2021,guadalajara,estados_unidos,16,539094,jalisco,14
 2021,guadalajara,belice,0,11,jalisco,14
@@ -14179,7 +14179,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,guadalajara,reino_unido,0,371,jalisco,14
 2021,guadalajara,rumania,0,34,jalisco,14
 2021,guadalajara,rusia,2,133,jalisco,14
-2021,guadalajara,serbia_2,0,0,jalisco,14
+2021,guadalajara,serbia,0,11,jalisco,14
 2021,guadalajara,suecia,0,41,jalisco,14
 2021,guadalajara,suiza,0,94,jalisco,14
 2021,guadalajara,ucrania,0,94,jalisco,14
@@ -14254,7 +14254,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,guadalajara,togo,0,0,jalisco,14
 2021,guadalajara,tunez,0,4,jalisco,14
 2021,guadalajara,zimbabue,0,1,jalisco,14
-2021,guadalajara,apatriadas,0,0,jalisco,14
+2021,guadalajara,apatridas,0,1,jalisco,14
 2021,mazatlan,canada,0,810,sinaloa,25
 2021,mazatlan,estados_unidos,3,31532,sinaloa,25
 2021,mazatlan,belice,0,0,sinaloa,25
@@ -14316,7 +14316,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,mazatlan,reino_unido,0,39,sinaloa,25
 2021,mazatlan,rumania,0,1,sinaloa,25
 2021,mazatlan,rusia,0,2,sinaloa,25
-2021,mazatlan,serbia_2,0,0,sinaloa,25
+2021,mazatlan,serbia,0,0,sinaloa,25
 2021,mazatlan,suecia,0,4,sinaloa,25
 2021,mazatlan,suiza,0,2,sinaloa,25
 2021,mazatlan,ucrania,0,2,sinaloa,25
@@ -14391,7 +14391,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,mazatlan,togo,0,0,sinaloa,25
 2021,mazatlan,tunez,0,0,sinaloa,25
 2021,mazatlan,zimbabue,0,0,sinaloa,25
-2021,mazatlan,apatriadas,0,0,sinaloa,25
+2021,mazatlan,apatridas,0,0,sinaloa,25
 2021,merida,canada,0,438,yucatan,31
 2021,merida,estados_unidos,0,23101,yucatan,31
 2021,merida,belice,0,16,yucatan,31
@@ -14453,7 +14453,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,merida,reino_unido,0,125,yucatan,31
 2021,merida,rumania,0,5,yucatan,31
 2021,merida,rusia,0,13,yucatan,31
-2021,merida,serbia_2,0,0,yucatan,31
+2021,merida,serbia,0,1,yucatan,31
 2021,merida,suecia,0,5,yucatan,31
 2021,merida,suiza,0,7,yucatan,31
 2021,merida,ucrania,0,4,yucatan,31
@@ -14528,7 +14528,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,merida,togo,0,0,yucatan,31
 2021,merida,tunez,0,0,yucatan,31
 2021,merida,zimbabue,0,0,yucatan,31
-2021,merida,apatriadas,0,0,yucatan,31
+2021,merida,apatridas,0,0,yucatan,31
 2021,monterrey,canada,0,1357,nuevo_leon,19
 2021,monterrey,estados_unidos,4,64747,nuevo_leon,19
 2021,monterrey,belice,0,8,nuevo_leon,19
@@ -14590,7 +14590,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,monterrey,reino_unido,0,266,nuevo_leon,19
 2021,monterrey,rumania,0,20,nuevo_leon,19
 2021,monterrey,rusia,1,29,nuevo_leon,19
-2021,monterrey,serbia_2,0,0,nuevo_leon,19
+2021,monterrey,serbia,0,4,nuevo_leon,19
 2021,monterrey,suecia,0,29,nuevo_leon,19
 2021,monterrey,suiza,0,46,nuevo_leon,19
 2021,monterrey,ucrania,0,29,nuevo_leon,19
@@ -14665,7 +14665,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,monterrey,togo,0,4,nuevo_leon,19
 2021,monterrey,tunez,0,7,nuevo_leon,19
 2021,monterrey,zimbabue,0,0,nuevo_leon,19
-2021,monterrey,apatriadas,0,0,nuevo_leon,19
+2021,monterrey,apatridas,0,0,nuevo_leon,19
 2021,morelia,canada,0,26,michoacan_de_ocampo,16
 2021,morelia,estados_unidos,3,63749,michoacan_de_ocampo,16
 2021,morelia,belice,0,5,michoacan_de_ocampo,16
@@ -14727,7 +14727,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,morelia,reino_unido,0,7,michoacan_de_ocampo,16
 2021,morelia,rumania,0,2,michoacan_de_ocampo,16
 2021,morelia,rusia,0,5,michoacan_de_ocampo,16
-2021,morelia,serbia_2,0,0,michoacan_de_ocampo,16
+2021,morelia,serbia,0,0,michoacan_de_ocampo,16
 2021,morelia,suecia,0,3,michoacan_de_ocampo,16
 2021,morelia,suiza,0,1,michoacan_de_ocampo,16
 2021,morelia,ucrania,0,0,michoacan_de_ocampo,16
@@ -14802,7 +14802,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,morelia,togo,0,0,michoacan_de_ocampo,16
 2021,morelia,tunez,0,0,michoacan_de_ocampo,16
 2021,morelia,zimbabue,0,0,michoacan_de_ocampo,16
-2021,morelia,apatriadas,0,0,michoacan_de_ocampo,16
+2021,morelia,apatridas,0,0,michoacan_de_ocampo,16
 2021,puerto_vallarta,canada,1,10444,jalisco,14
 2021,puerto_vallarta,estados_unidos,31,590751,jalisco,14
 2021,puerto_vallarta,belice,0,21,jalisco,14
@@ -14864,7 +14864,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,puerto_vallarta,reino_unido,0,1462,jalisco,14
 2021,puerto_vallarta,rumania,0,66,jalisco,14
 2021,puerto_vallarta,rusia,0,343,jalisco,14
-2021,puerto_vallarta,serbia_2,0,0,jalisco,14
+2021,puerto_vallarta,serbia,0,25,jalisco,14
 2021,puerto_vallarta,suecia,0,86,jalisco,14
 2021,puerto_vallarta,suiza,0,97,jalisco,14
 2021,puerto_vallarta,ucrania,0,323,jalisco,14
@@ -14939,7 +14939,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,puerto_vallarta,togo,0,0,jalisco,14
 2021,puerto_vallarta,tunez,0,7,jalisco,14
 2021,puerto_vallarta,zimbabue,0,9,jalisco,14
-2021,puerto_vallarta,apatriadas,0,0,jalisco,14
+2021,puerto_vallarta,apatridas,0,0,jalisco,14
 2021,queretaro,canada,0,475,queretaro,22
 2021,queretaro,estados_unidos,1,38721,queretaro,22
 2021,queretaro,belice,0,3,queretaro,22
@@ -15001,7 +15001,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,queretaro,reino_unido,0,91,queretaro,22
 2021,queretaro,rumania,0,6,queretaro,22
 2021,queretaro,rusia,0,16,queretaro,22
-2021,queretaro,serbia_2,0,0,queretaro,22
+2021,queretaro,serbia,0,0,queretaro,22
 2021,queretaro,suecia,0,11,queretaro,22
 2021,queretaro,suiza,0,20,queretaro,22
 2021,queretaro,ucrania,0,5,queretaro,22
@@ -15076,7 +15076,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,queretaro,togo,0,0,queretaro,22
 2021,queretaro,tunez,0,1,queretaro,22
 2021,queretaro,zimbabue,0,0,queretaro,22
-2021,queretaro,apatriadas,0,0,queretaro,22
+2021,queretaro,apatridas,0,0,queretaro,22
 2021,san_jose_del_cabo,canada,0,7724,baja_california,02
 2021,san_jose_del_cabo,estados_unidos,56,1040732,baja_california,02
 2021,san_jose_del_cabo,belice,0,28,baja_california,02
@@ -15138,7 +15138,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,san_jose_del_cabo,reino_unido,0,2592,baja_california,02
 2021,san_jose_del_cabo,rumania,0,97,baja_california,02
 2021,san_jose_del_cabo,rusia,0,323,baja_california,02
-2021,san_jose_del_cabo,serbia_2,0,0,baja_california,02
+2021,san_jose_del_cabo,serbia,0,32,baja_california,02
 2021,san_jose_del_cabo,suecia,0,211,baja_california,02
 2021,san_jose_del_cabo,suiza,0,126,baja_california,02
 2021,san_jose_del_cabo,ucrania,0,205,baja_california,02
@@ -15213,7 +15213,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,san_jose_del_cabo,togo,0,3,baja_california,02
 2021,san_jose_del_cabo,tunez,0,7,baja_california,02
 2021,san_jose_del_cabo,zimbabue,0,25,baja_california,02
-2021,san_jose_del_cabo,apatriadas,0,0,baja_california,02
+2021,san_jose_del_cabo,apatridas,0,0,baja_california,02
 2021,san_luis,canada,0,109,san_luis_potosi,24
 2021,san_luis,estados_unidos,1,22518,san_luis_potosi,24
 2021,san_luis,belice,0,1,san_luis_potosi,24
@@ -15275,7 +15275,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,san_luis,reino_unido,0,12,san_luis_potosi,24
 2021,san_luis,rumania,0,2,san_luis_potosi,24
 2021,san_luis,rusia,0,0,san_luis_potosi,24
-2021,san_luis,serbia_2,0,0,san_luis_potosi,24
+2021,san_luis,serbia,0,0,san_luis_potosi,24
 2021,san_luis,suecia,0,3,san_luis_potosi,24
 2021,san_luis,suiza,0,4,san_luis_potosi,24
 2021,san_luis,ucrania,0,3,san_luis_potosi,24
@@ -15350,7 +15350,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,san_luis,togo,0,0,san_luis_potosi,24
 2021,san_luis,tunez,0,0,san_luis_potosi,24
 2021,san_luis,zimbabue,0,0,san_luis_potosi,24
-2021,san_luis,apatriadas,0,0,san_luis_potosi,24
+2021,san_luis,apatridas,0,0,san_luis_potosi,24
 2021,silao,canada,0,305,guanajuato,11
 2021,silao,estados_unidos,6,88782,guanajuato,11
 2021,silao,belice,0,5,guanajuato,11
@@ -15412,7 +15412,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,silao,reino_unido,0,72,guanajuato,11
 2021,silao,rumania,0,3,guanajuato,11
 2021,silao,rusia,0,8,guanajuato,11
-2021,silao,serbia_2,0,0,guanajuato,11
+2021,silao,serbia,0,5,guanajuato,11
 2021,silao,suecia,0,9,guanajuato,11
 2021,silao,suiza,0,18,guanajuato,11
 2021,silao,ucrania,0,6,guanajuato,11
@@ -15487,7 +15487,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,silao,togo,0,1,guanajuato,11
 2021,silao,tunez,0,1,guanajuato,11
 2021,silao,zimbabue,0,1,guanajuato,11
-2021,silao,apatriadas,0,0,guanajuato,11
+2021,silao,apatridas,0,1,guanajuato,11
 2021,tijuana,canada,0,0,baja_california,02
 2021,tijuana,estados_unidos,2,0,baja_california,02
 2021,tijuana,belice,0,0,baja_california,02
@@ -15549,7 +15549,7 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,tijuana,reino_unido,0,0,baja_california,02
 2021,tijuana,rumania,0,0,baja_california,02
 2021,tijuana,rusia,0,0,baja_california,02
-2021,tijuana,serbia_2,0,0,baja_california,02
+2021,tijuana,serbia,0,0,baja_california,02
 2021,tijuana,suecia,0,0,baja_california,02
 2021,tijuana,suiza,0,0,baja_california,02
 2021,tijuana,ucrania,0,0,baja_california,02
@@ -15624,4 +15624,4 @@ ano,aeropuerto,pais,eventos_de_rechazo,ingresos,entidad,cve_entidad
 2021,tijuana,togo,0,0,baja_california,02
 2021,tijuana,tunez,0,0,baja_california,02
 2021,tijuana,zimbabue,0,0,baja_california,02
-2021,tijuana,apatriadas,0,0,baja_california,02
+2021,tijuana,apatridas,0,0,baja_california,02

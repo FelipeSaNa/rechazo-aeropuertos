@@ -4,6 +4,29 @@
 # Exploratory Data Analysis
 # =============================================
 
+#adding rate of deportations per 100 entries
+data_all1 = data_all %>%
+    mutate(tasa = (eventos_de_rechazo/ingresos)*10,
+           tasa = round(tasa, 2)) %>%
+    filter(ingresos > 0)
+
+data_all2 = data_all %>%
+    mutate(tasa = (eventos_de_rechazo/ingresos)*10,
+           tasa = round(tasa, 2)) %>%
+    filter(ingresos == 0)
+
+
+
+#total rejections per 10 entries
+grouped_data = data_all %>%
+    group_by(pais) %>%
+    summarize(total_rechazos = sum(eventos_de_rechazo),
+              total_ingresos = sum(ingresos)) %>%
+    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
+           tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
+    arrange(desc(total_rechazos))
+
+
 #total grouping by years
 data_anual = data_all %>%
     group_by(ano) %>%

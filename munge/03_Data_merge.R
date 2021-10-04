@@ -10,7 +10,6 @@ ingresos_all = ingresos_2017 %>%
     full_join(ingresos_2019) %>%
     full_join(ingresos_2020) %>%
     full_join(ingresos_2021)
-
 # Merging  all databases
 data_all = data_2017 %>%
     full_join(data_2018) %>%

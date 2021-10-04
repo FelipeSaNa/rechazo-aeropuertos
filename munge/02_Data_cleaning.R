@@ -99,7 +99,7 @@ data_2019 = data_2019 %>%
     pivot_longer(cols = aguascalientes:zihuatanejo, names_to = "aeropuerto") %>%
     pivot_wider(names_from = pais, values_from = value) %>%
     clean_names() %>%
-    pivot_longer(cols= canada:apatriadas, names_to = "pais")
+    pivot_longer(cols= canada:apatridas, names_to = "pais")
 
 
 #Cleaning 2020 rechazos database
@@ -153,7 +153,7 @@ data_2021 = data_2021 %>%
     pivot_longer(cols = cancun:tijuana, names_to = "aeropuerto") %>%
     pivot_wider(names_from = pais, values_from = value) %>%
     clean_names() %>%
-    pivot_longer(cols= canada:apatriadas, names_to = "pais")
+    pivot_longer(cols= canada:apatridas, names_to = "pais")
 
 #Cleaning claves entidad
 claves_entidades = claves_entidades %>%
