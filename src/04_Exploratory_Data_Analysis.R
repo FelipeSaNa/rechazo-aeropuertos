@@ -4,6 +4,16 @@
 # Exploratory Data Analysis
 # =============================================
 
+
+data_no_visa = data_all %>%
+    filter(visa == "no") %>%
+    group_by(pais) %>%
+    summarize(total_rechazos = sum(eventos_de_rechazo),
+              total_ingresos = sum(ingresos)) %>%
+    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
+           tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
+    arrange(desc(tasa_10_ingresos))
+
 #total rejections per 10 entries and nationality graphs
 data_nacionalidad = data_all %>%
     group_by(pais) %>%
@@ -11,7 +21,7 @@ data_nacionalidad = data_all %>%
               total_ingresos = sum(ingresos)) %>%
     mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
            tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
-    arrange(desc(total_rechazos))
+    arrange(desc(tasa_10_ingresos))
 
 #graphing nationalities rejections rate
 data_nacionalidad %>%
@@ -30,11 +40,36 @@ data_nacionalidad %>%
         plot.title = element_text(size=12),
         plot.subtitle = element_text(size=10)) +
     labs(title = "México: Tasa de rechazos ocurridos por cada 10 ingresos entre 2017 y 2021",
-         subtitle = "Desagregación por nacionalidades más frecuentes",
+         subtitle = "Desagregación por nacionalidades más frecuentes que no requieren visa",
          caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
     xlab("") +
     ylab("Total de rechazos por cada 10 entradas en aeropuertos")
 ggsave("grafica_tasas.png", path = here("plots"))
+
+
+#graphing nationalities rejections rate for countries visa is not needed
+data_no_visa %>%
+    filter(!is.na(tasa_10_ingresos)) %>%
+    arrange(tasa_10_ingresos) %>%
+    tail(20) %>%
+    mutate(pais=factor(pais, pais)) %>%
+    ggplot( aes(x=pais, y=tasa_10_ingresos) ) +
+    geom_bar(stat="identity", fill="#69b3a2") +
+    coord_flip() +
+    theme_ipsum() +
+    theme(
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        legend.position="none",
+        plot.title = element_text(size=12),
+        plot.subtitle = element_text(size=10)) +
+    labs(title = "México: Tasa de rechazos ocurridos por cada 10 ingresos entre 2017 y 2021",
+         subtitle = "Desagregación por nacionalidades más frecuentes que no requieren visa",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
+    xlab("") +
+    ylab("Total de rechazos por cada 10 entradas en aeropuertos")
+ggsave("grafica_tasas_no_visa.png", path = here("plots"))
+
 
 #graphing nationalities rejections
 data_nacionalidad %>%
@@ -59,6 +94,28 @@ data_nacionalidad %>%
     ylab("Total de eventos")
 ggsave("grafica_nacionalidades.png", path = here("plots"))
 
+#graphing nationalities rejections for countries were visa is not requiresd
+data_no_visa %>%
+    filter(!is.na(total_rechazos)) %>%
+    arrange(total_rechazos) %>%
+    tail(20) %>%
+    mutate(pais=factor(pais, pais)) %>%
+    ggplot( aes(x=pais, y=total_rechazos) ) +
+    geom_bar(stat="identity", fill="#69b3a2") +
+    coord_flip() +
+    theme_ipsum() +
+    theme(
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        legend.position="none",
+        plot.title = element_text(size=12),
+        plot.subtitle = element_text(size=10)) +
+    labs(title = "México: Rechazos ocurridos en aeropuertos entre 2017 y 2021",
+         subtitle = "Desagregación por nacionalidades más frecuentes que no requieren visa",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
+    xlab("") +
+    ylab("Total de eventos")
+ggsave("grafica_nacionalidades_no_visa.png", path = here("plots"))
 
 
 #total grouping by years
@@ -87,6 +144,12 @@ data_anual %>%
     xlab("") +
     ylab("Total de eventos")
 ggsave("grafica_anual.png", path = here("plots"))
+
+
+
+
+
+
 
 # data grouping by aeropuerto
 data_aeropuerto= data_all %>%
