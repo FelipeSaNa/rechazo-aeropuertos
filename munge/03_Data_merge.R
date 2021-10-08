@@ -55,7 +55,9 @@ data_all = data_2017 %>%
                                aeropuerto == "torreon" ~ "coahuila_de_zaragoza", #revisar
                                aeropuerto == "uruapan" ~ "michoacan_de_ocampo", #revisar
                                aeropuerto == "villahermosa" ~ "tabasco")) %>%
-    left_join(claves_entidades, by = "entidad")
+    left_join(claves_entidades, by = "entidad") %>%
+    left_join(visa_requirements, by = "pais") %>%
+    mutate(visa = replace_na(visa, "no"))
 
 #save clean and merged database in various formats
 save(data_all, file = here("data","clean","eventos_rechazo_agosto2021.RDS"))
@@ -66,6 +68,6 @@ save(claves_entidades, file = here("data","clean","claves_entidades_clean.RData"
 #remove not needed data
 rm(data_2017, data_2018, data_2019, data_2020, data_2021)
 rm(ingresos_2017, ingresos_2018, ingresos_2019, ingresos_2020, ingresos_2021, ingresos_all)
-
+rm(visa_requirements)
 
 #END

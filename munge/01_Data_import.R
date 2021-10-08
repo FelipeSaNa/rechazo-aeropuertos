@@ -24,4 +24,7 @@ ingresos_2021 = read_xls(here("data", "raw", "ingresos_2021.xls")) %>% clean_nam
 #importing claves entidad
 claves_entidades = as_tibble(read_csv(here("data", "raw", "municipios.csv"))) %>% clean_names()
 
+#importing visa requirements
+visa_requirements = read_xlsx(here("data", "raw", "visa.xlsx")) %>% clean_names()
+
 #END

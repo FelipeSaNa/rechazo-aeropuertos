@@ -352,6 +352,33 @@ ingresos_2021 = ingresos_2021 %>%
     pivot_longer(cols= mexico:no_especificado, names_to = "pais")%>%
     rename(ingresos = value)
 
+#cleaning visa database
+visa_requirements = visa_requirements %>%
+    pivot_wider(names_from = pais, values_from = visa) %>%
+    clean_names()%>%
+    rename(brunei = brunei_darussalam,
+           lesoto = lesotho,
+           congo_rep = republica_democratica_del_congo,
+           laos = lao,
+           samoa_occidental =samoa,
+           botsuana =  botswana,
+           macedonia = ex_republica_yugoslava_de_macedonia,
+           fiyi_islas = fiji,
+           irak = iraq,
+           kazajistan = kazajstan,
+           mianmar_birmania = myanmar,
+           siria = republica_arabe_de_siria,
+           saharaui_rep_arabe = republica_arabe_de_saharaui_democratica,
+           moldavia = republica_de_moldova,
+           dominicana_rep = republica_dominicana,
+           nepal = republica_federal_democratica_de_nepal,
+           ruanda = rwanda,
+           surinam = suriname,
+           ucrania = urania,
+           zimbaue = zimbawe) %>%
+    pivot_longer(cols=afganistan:zimbaue, names_to = "pais", values_to = "visa") %>%
+    mutate(visa = ifelse(pais == "ecuador", "no", "si"))
+
 
 #END
 
