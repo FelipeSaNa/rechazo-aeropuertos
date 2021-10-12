@@ -10,7 +10,7 @@ data_no_visa = data_all %>%
     group_by(pais) %>%
     summarize(total_rechazos = sum(eventos_de_rechazo),
               total_ingresos = sum(ingresos)) %>%
-    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
+    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*100,
            tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
     arrange(desc(tasa_10_ingresos))
 
@@ -19,7 +19,7 @@ data_nacionalidad = data_all %>%
     group_by(pais) %>%
     summarize(total_rechazos = sum(eventos_de_rechazo),
               total_ingresos = sum(ingresos)) %>%
-    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
+    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*100,
            tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
     arrange(desc(tasa_10_ingresos))
 
@@ -39,7 +39,7 @@ data_nacionalidad %>%
         legend.position="none",
         plot.title = element_text(size=12),
         plot.subtitle = element_text(size=10)) +
-    labs(title = "México: Tasa de rechazos ocurridos por cada 10 ingresos entre 2017 y 2021",
+    labs(title = "México: Tasa de rechazos ocurridos por cada 100 ingresos entre 2017 y 2021",
          subtitle = "Desagregación por nacionalidades más frecuentes que no requieren visa",
          caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
     xlab("") +
@@ -63,7 +63,7 @@ data_no_visa %>%
         legend.position="none",
         plot.title = element_text(size=12),
         plot.subtitle = element_text(size=10)) +
-    labs(title = "México: Tasa de rechazos ocurridos por cada 10 ingresos entre 2017 y 2021",
+    labs(title = "México: Tasa de rechazos ocurridos por cada 100 ingresos entre 2017 y 2021",
          subtitle = "Desagregación por nacionalidades más frecuentes que no requieren visa",
          caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
     xlab("") +
@@ -146,22 +146,37 @@ data_anual %>%
 ggsave("grafica_anual.png", path = here("plots"))
 
 
-
-
-
-
-
 # data grouping by aeropuerto
-data_aeropuerto= data_all %>%
+data_aeropuerto = data_all %>%
     group_by(aeropuerto) %>%
-    # filter(ano < 2021) %>%
-    # filter(aeropuerto == "cdmx" | aeropuerto == "cancun") %>%
     summarize(total_rechazos = sum(eventos_de_rechazo),
               total_ingresos = sum(ingresos)) %>%
-    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*10,
+    mutate(tasa_10_ingresos = (total_rechazos/total_ingresos)*100,
            tasa_10_ingresos = round(tasa_10_ingresos, 2)) %>%
-    arrange(desc(total_rechazos))
+    arrange(desc(tasa_10_ingresos))
 
+#graphing airport rejections
+data_aeropuerto %>%
+    filter(!is.na(total_rechazos)) %>%
+    arrange(total_rechazos) %>%
+    tail(15) %>%
+    mutate(aeropuerto=factor(aeropuerto, aeropuerto)) %>%
+    ggplot(aes(x=aeropuerto, y=total_rechazos) ) +
+    geom_bar(stat="identity", fill="#69b3a2") +
+    coord_flip() +
+    theme_ipsum() +
+    theme(
+        panel.grid.minor.y = element_blank(),
+        panel.grid.major.y = element_blank(),
+        legend.position="none",
+        plot.title = element_text(size=12),
+        plot.subtitle = element_text(size=10)) +
+    labs(title = "México: Rechazos ocurridos en aeropuertos entre 2017 y 2021",
+         subtitle = "Desagregación por aeropuertos más frecuentes",
+         caption = "Elaboración propia con información de la Dirección de Estadística del Centro de Estudios Migratorios de SEGOB")+
+    xlab("") +
+    ylab("Total de eventos")
+ggsave("grafica_aeropuertos.png", path = here("plots"))
 
 
 # #data grouping by country of origin

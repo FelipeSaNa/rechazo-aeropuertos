@@ -58,7 +58,8 @@ data_all = data_2017 %>%
     left_join(claves_entidades, by = "entidad") %>%
     left_join(visa_requirements, by = "pais") %>%
     mutate(visa = replace_na(visa, "no"))
-
+# mean_all = c(NA, mean, NA, mean(data_all$eventos_de_rechazo), mean(data_all$ingresos), NA, NA, NA)
+# data_all_2 = rbind(data_all, mean_all)
 #save clean and merged database in various formats
 save(data_all, file = here("data","clean","eventos_rechazo_agosto2021.RDS"))
 write_xlsx(data_all, here("data","clean","eventos_rechazo_agosto2021.xlsx"))
