@@ -129,9 +129,9 @@ tabulado_all = tabulado_old %>%
 # summarize(across(eventos_de_rechazo:ingresos, mean, na.rm = T))
 
 #save clean and merged database in various formats
-save(data_all, file = here("data","clean","eventos_rechazo_agosto2021.RDS"))
-write_xlsx(data_all, here("data","clean","eventos_rechazo_agosto2021.xlsx"))
-write_csv(data_all, here("data","clean","eventos_rechazo_agosto2021.csv"))
+save(data_all, file = here("data","clean","eventos_rechazo_2017_2021.RDS"))
+write_xlsx(data_all, here("data","clean","eventos_rechazo_2017_2021.xlsx"))
+write_csv(data_all, here("data","clean","eventos_rechazo_2017_2021.csv"))
 # save(claves_entidades, file = here("data","clean","claves_entidades_clean.RData"))
 
 

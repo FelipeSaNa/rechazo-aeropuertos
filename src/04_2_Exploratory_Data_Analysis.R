@@ -131,6 +131,7 @@ ggsave("grafica_tasas_no_visa.png", path = here("plots"))
 
 data_no_visa_ecuador %>%
     filter(!is.na(tasa_10_ingresos)) %>%
+    filter(pais != "ecuador") %>%
     filter(total_rechazos >= 10) %>%
     arrange(tasa_10_ingresos) %>%
     tail(15) %>%
