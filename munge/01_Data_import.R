@@ -5,7 +5,7 @@
 # =============================================
 
 #loading packages
-pacman::p_load(tidyverse, here, janitor, readxl, writexl, sf, hrbrthemes, kableExtra)
+pacman::p_load(tidyverse, here, janitor, readxl, writexl, sf, hrbrthemes, kableExtra, esquisse)
 
 #importing rechazos databases with clean names
 data_2017 = read_xls(here("data", "raw", "rechazos_2017.xls")) %>% clean_names()
@@ -26,5 +26,12 @@ claves_entidades = as_tibble(read_csv(here("data", "raw", "municipios.csv"))) %>
 
 #importing visa requirements
 visa_requirements = read_xlsx(here("data", "raw", "visa.xlsx")) %>% clean_names()
+
+#importing sex and age data
+sexo_edad = read_xlsx(here("data", "raw", "ANEXO_INFOMEX_edad_sexo_final.xlsx")) %>% clean_names
+
+#importing visits data
+visitas = read_xlsx(here("data", "raw", "lista_visitas.xlsx")) %>% clean_names
+
 
 #END
